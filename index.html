@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home Page</title>
+<style>
+  .button-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 550px;
+    }
+
+    .button {
+	   
+        padding: 10px 20px;
+        margin: 0 5px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+	margin-left:15px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
+    .purple-button {
+        background-color: #4324f2;
+        color: white;
+    }
+
+    .white-button {
+        background-color: white;
+        color: #4324f2;
+    }
+
+    .purple-button:hover {
+        background-color: white; /* Change to a darker shade of purple */
+        color: #4324f2;
+    }
+
+    .white-button:hover {
+        background-color: #4324f2;
+        color: white;
+    }    
+body {
+        background-image: url('homebg.svg');
+        background-size: cover ; /* width height */; /* Adjust this based on your preference */
+        /* You can add more background properties here if needed */
+    }
+ @media only screen and (max-width: 600px) {
+        body {
+            background-image: url('mobilebg.svg');
+            background-size: cover;
+        }
+
+        .button {
+           
+        }
+    }
+</style>
+</head>
+<body>
+	<div  class="button-container">
+	    <button class="button purple-button">EXPLORE</button>
+    <button class="button white-button">UPLOAD</button>
+	</div>
+</body>
+</html>
